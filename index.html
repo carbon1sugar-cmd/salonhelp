@@ -48,9 +48,16 @@ ol{margin:0 0 14px; padding-left:1.4em}
 footer{background:var(--soft); border-top:1px solid var(--line); padding:26px 0; font-size:14px; color:var(--sub)}
 footer a{color:var(--sub)}
 .center{text-align:center; padding:34px 0}
+.entry-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:0 0 34px}
+.entry-card{display:block; color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:16px 18px; background:#fff}
+.entry-card:hover{border-color:var(--accent); background:var(--soft)}
+.entry-label{display:block; color:var(--accent); font-size:14px; font-weight:700; margin-bottom:4px}
+.entry-title{display:block; font-weight:700; font-size:17px; margin-bottom:4px}
+.entry-description{display:block; color:var(--sub); font-size:14px; line-height:1.6}
 @media(max-width:600px){
   h1{font-size:23px}
   .hero{padding:32px 0 28px}
+  .entry-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -67,6 +74,20 @@ footer a{color:var(--sub)}
     <p class="lead">2時間から稼働できます。報酬は全額、その日のうちに現金で受け取ります。美容師免許があれば、登録は無料です。</p>
     <a class="cta" href="https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?from=web">美容師として登録する</a>
     <p class="note">登録は無料です。登録したあとに、自分で募集を選んで応募します。</p>
+  </div>
+
+  <!-- 追加：利用者別の入口 -->
+  <div class="entry-grid" aria-label="利用者別の入口">
+    <a class="entry-card" href="https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?from=web">
+      <span class="entry-label">美容師の方</span>
+      <span class="entry-title">美容師として登録する</span>
+      <span class="entry-description">空いている日に、美容室のヘルプへ応募する</span>
+    </a>
+    <a class="entry-card" href="https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?from=business">
+      <span class="entry-label">美容室・事業者の方</span>
+      <span class="entry-title">事業者として利用する</span>
+      <span class="entry-description">ヘルプに来てほしい美容師を募集する</span>
+    </a>
   </div>
 
   <section>
