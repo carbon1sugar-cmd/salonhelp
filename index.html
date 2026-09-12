@@ -4,13 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>サロンヘルプ</title>
-<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?page=stylist">
-<script>
-  window.location.replace("https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?page=stylist");
-</script>
-</head>
-<body>
-<p>サロンヘルプの登録画面に移動します。自動的に移動しない場合は、以下をご利用ください。</p>
-<p><a href="https://script.google.com/macros/s/AKfycbyjn3_DIAeG_5FE1lHIrmNm_mJJGSIohoSKq4s-s55ChjLcf3DiYNU9JN8zCSrLp9QmfQ/exec?page=stylist">サロンヘルプ　美容師の登録へ</a></p>
-</body>
-</html>
+<style>
+  :root {
+    --ink: #14171E;
+    --muted: #5C6270;
+    --rule: #D9DCE3;
+    --accent: #1F4E79;
+    --paper: #FAFAFC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 22px; margin: 0 0 24px; }
+  .msg { background: #fff; border: 1px solid var(--rule); border-radius: 6px; padding: 22px 20px; margin-bottom: 28px; font-size: 15px; }
+  .msg p { margin: 0 0 14px; }
+  .msg p:last-child { margin-bottom: 0; }
+  .closing { font-weight: 700; font-size: 17px; margin-top: 20px; }
+  .buttons { display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: var(--accent);
+    color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .btn:hover { opacity: .88; }
+  .btn.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+  .service { background: #fff;
